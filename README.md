@@ -2,8 +2,8 @@ Dummy script for auto-updating and cleaning a pc which runs Debian/Ubuntu based 
 
 # Execution 
 1. Go to the directory where `update` file is saved
-2. Edit it and change `your_password` field in line 3 with the password you have set on your linux user and save it
-3. Execute:
+2. Edit it and change `your_password` in line 3 with the password you have set on your linux user and save it
+3. Run:
 
 ```
 chmod +x update
