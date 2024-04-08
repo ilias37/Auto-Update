@@ -25,4 +25,4 @@ lines
 run "apt autoclean"
 lines
 
-run "apt autoremove"
+run "apt autoremove -y"
