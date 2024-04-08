@@ -26,3 +26,4 @@ run "apt autoclean"
 lines
 
 run "apt autoremove -y"
+lines
