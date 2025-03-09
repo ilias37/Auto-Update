@@ -14,5 +14,5 @@ That will make the file executable
 4. Anytime you want to update and clean your pc just run:
 
 ```
-./update
+./update.sh
 ```
