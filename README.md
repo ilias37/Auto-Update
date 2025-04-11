@@ -1,18 +1,43 @@
-Dummy script for auto-updating and cleaning a pc which runs Debian/Ubuntu based Linux distro
+# Auto APT Maintenance Script
 
-# Execution 
-1. Go to the directory where `update` file is saved
-2. Edit it and change `your_password` in line 3 with the password you have set on your linux user and save it
-3. Run:
+This script automates basic APT maintenance tasks on Debian-based systems like Ubuntu. It updates packages, cleans up cache, and removes unnecessary dependencies — all with one simple command. The script has been made for running it without password prompt.
 
+## What It Does
+
+- Updates package lists
+- Upgrades installed packages
+- Cleans APT cache and obsolete files
+- Removes unneeded packages
+- Optionally: Repairs broken installs (with advanced version)
+
+---
+
+## Installation
+
+1. **Clone this repo:**
+```bash
+git clone https://github.com/ilias37/Auto-Update.git
+cd Auto-Update
 ```
-chmod +x update
+
+2. **Make the script executable:**
+```bash
+chmod +x update.sh
 ```
 
-That will make the file executable 
-
-4. Anytime you want to update and clean your pc just run:
-
+3. **Open the sudoers file using visudo**
+```bash
+sudo visudo
 ```
+
+4. **Scroll to the bottom and add the line**
+```bash
+your_username ALL=(ALL) NOPASSWD: /usr/bin/apt, /usr/bin/apt-get, /usr/bin/dpkg
+```
+Replace your_username with your actual Linux username.
+Save and exit.
+
+5. **Run the script:**
+```bash
 ./update.sh
 ```
