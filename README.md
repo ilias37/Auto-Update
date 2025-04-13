@@ -8,7 +8,6 @@ This script automates basic APT maintenance tasks on Debian-based systems like U
 - Upgrades installed packages
 - Cleans APT cache and obsolete files
 - Removes unneeded packages
-- Optionally: Repairs broken installs (with advanced version)
 
 ---
 
